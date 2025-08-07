@@ -1,0 +1,16 @@
+export interface News {
+  id: number;
+  title: string;
+  body: string;
+  tags: string[];
+  reactions: {
+    likes: number;
+    dislikes: number;
+  };
+}
+
+export interface NewsSchema {
+  data: News[];
+  total: number;
+  isLoading: boolean;
+}
